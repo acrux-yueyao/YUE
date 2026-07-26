@@ -98,7 +98,11 @@
     npCn.textContent = d.cn;
     npLinks.innerHTML = "";
     if (d.demo) npLinks.appendChild(mkLink(d.demo, d.demolabel || "Open", false));
-    if (d.case) npLinks.appendChild(mkLink(d.case, lang === "zh" ? "案例" : "Case", true));
+    if (d.case) {
+      var caseLabel = lang === "zh" ? (d.caselabelZh || d.caselabel || "案例")
+                                    : (d.caselabel || "Case");
+      npLinks.appendChild(mkLink(d.case, caseLabel, true));
+    }
   }
   function mkLink(href, label, alt) {
     var a = document.createElement("a");

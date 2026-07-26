@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yue Yao — HCI Researcher · Interaction Designer · Interactive Artist</title>
+  <meta name="description" content="Yue Yao — HCI researcher, interaction designer and interactive artist. A playful OS-style portfolio: boot in, flip through the projects on the iPod, launch from the dock.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230e0e11%22/><text x=%2250%22 y=%2272%22 font-size=%2264%22 text-anchor=%22middle%22 fill=%22%23e7e3d8%22>◆</text></svg>">
+</head>
+<body>
+
+  <!-- ── Menu bar ────────────────────────────────────────── -->
+  <div class="menubar">
+    <div class="mb-left">
+      <span class="mb-logo">◆</span>
+      <button class="mb-item mb-name" data-go="boot">Yue Yao OS</button>
+      <button class="mb-item" data-go="about"><span class="en">About</span><span class="zh">关于</span></button>
+      <button class="mb-item" data-go="ipod"><span class="en">Work</span><span class="zh">作品</span></button>
+      <button class="mb-item" data-go="dock"><span class="en">Contact</span><span class="zh">联系</span></button>
+    </div>
+    <div class="mb-right">
+      <button class="mb-lang" id="langToggle" type="button" aria-label="Switch language">中文</button>
+      <span class="mb-sig">HCI · BU</span>
+      <span class="mb-clock" id="clock">--:--</span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ══ BOOT / HERO ═══════════════════════════════════ -->
+    <section class="boot" id="boot">
+      <div class="boot-inner">
+        <p class="mono-label scramble" data-en="◇ SYSTEM ONLINE — YUE YAO OS v1.0" data-zh="◇ 系统已启动 — YUE YAO OS v1.0"></p>
+        <h1 class="boot-title scramble" data-en="Hi there, I'm Yue Yao." data-zh="你好，我是 Yue Yao。"></h1>
+        <p class="boot-sub scramble" data-en="HCI Researcher · Interaction Designer · Interactive Artist" data-zh="HCI 研究者 · 交互设计师 · 交互艺术家"></p>
+        <p class="boot-blurb">
+          <span class="en">I build strange but genuinely working artifacts — a deity you summon, a hall of AI clerks, a room of small screens — and take each one seriously as a way to ask a research question. Let's make some digital magic.</span>
+          <span class="zh">我造一些奇怪、却真的能运行的作品——一位可被召唤的神明、一座 AI 办事大厅、一屋子小小的屏幕——再把每一个当作提出研究问题的方式。一起造点数字魔法。</span>
+        </p>
+      </div>
+      <button class="boot-cue" data-go="about">
+        <span class="en">Scroll down to enter</span><span class="zh">向下滚动进入</span>
+        <span class="cue-arrow">↓</span>
+      </button>
+    </section>
+
+    <!-- ══ ABOUT (window) ════════════════════════════════ -->
+    <section class="desk" id="about">
+      <div class="window">
+        <div class="win-bar">
+          <span class="lights"><i></i><i></i><i></i></span>
+          <span class="win-title">about — yue_yao.txt</span>
+          <span class="win-spacer"></span>
+        </div>
+        <div class="win-body">
+          <p class="win-lead scramble" data-en="An HCI researcher and designer at Boston University." data-zh="波士顿大学的 HCI 研究者与设计师。"></p>
+          <p class="win-p">
+            <span class="en">I work across interaction design, interactive art, and research through design. I'm interested in the long work of becoming — how our values, sense of self, and understanding of the world keep shifting across a life — and in how design might make that negotiation gentler, without dictating where anyone should land. Currently preparing work toward CHI and applying to HCI PhD programs.</span>
+            <span class="zh">我工作横跨交互设计、交互艺术与研究性设计。我关注漫长的“成为”——价值、自我与世界理解如何在一生中不断变化——以及设计如何让这场协商更温和，同时不去规定任何人最终落在哪里。目前正为 CHI 投稿准备，并申请 HCI 博士项目。</span>
+          </p>
+
+          <div class="skills">
+            <div class="skill-col">
+              <p class="skill-h">◇ <span class="en">Research</span><span class="zh">研究</span></p>
+              <ul><li>HCI</li><li>Mixed Methods</li><li>Research through Design</li><li>Value Negotiation</li></ul>
+            </div>
+            <div class="skill-col">
+              <p class="skill-h">◇ <span class="en">Design</span><span class="zh">设计</span></p>
+              <ul><li>Figma</li><li>Interaction</li><li>Motion</li><li>Exhibition</li></ul>
+            </div>
+            <div class="skill-col">
+              <p class="skill-h">◇ <span class="en">Making</span><span class="zh">造物</span></p>
+              <ul><li>three.js</li><li>Vanilla JS</li><li>Painting</li><li>Sound</li></ul>
+            </div>
+          </div>
+
+          <p class="recent-label"><span class="en">Recently launched</span><span class="zh">最近上线</span></p>
+          <div class="app-row">
+            <button class="app" data-album="0"><img src="assets/covers/god-shift.jpg" alt="GOD SHIFT"><span>GOD SHIFT</span></button>
+            <button class="app" data-album="1"><img src="assets/covers/govai.jpg" alt="GOV.AI"><span>GOV.AI</span></button>
+            <button class="app" data-album="2"><img src="assets/covers/negotiated.png" alt="THE WORLD IS YOURS"><span>世界是你的</span></button>
+            <button class="app" data-album="3"><img src="assets/covers/mycelium.png" alt="The Whisper Network"><span>Whisper Net</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ IPOD (projects) ═══════════════════════════════ -->
+    <section class="pod-sec" id="ipod">
+      <div class="pod-head">
+        <h2 class="scramble" data-en="Selected Work" data-zh="精选作品"></h2>
+        <p class="pod-hint"><span class="en">Drag the wheel to flip albums · press the center to open · ← → also work</span><span class="zh">拖动转盘切换“专辑” · 按中心打开 · 也可用 ← →</span></p>
+      </div>
+
+      <div class="ipod" id="ipod-device">
+        <div class="ipod-screen">
+          <div class="screen-status"><span id="scr-idx">01</span> / 04 <span class="scr-batt">▮▮▮▮</span></div>
+          <div class="coverflow" id="coverflow">
+            <!-- album 0 -->
+            <article class="album" data-i="0"
+              data-title="GOD SHIFT" data-cn="神谕之镜" data-cat="Playable Game" data-year="2026"
+              data-demo="https://god-mirror.vercel.app/" data-demolabel="Play"
+              data-case="https://god-mirror.vercel.app/portfolio-v2.html">
+              <img src="assets/covers/god-shift.jpg" alt="GOD SHIFT">
+            </article>
+            <!-- album 1 -->
+            <article class="album" data-i="1"
+              data-title="GOV.AI" data-cn="AI 官僚主义" data-cat="Research through Design" data-year="2026"
+              data-demo="https://ai-bureaucratism.vercel.app" data-demolabel="Enter"
+              data-case="https://ai-bureaucratism.vercel.app/study">
+              <img src="assets/covers/govai.jpg" alt="GOV.AI">
+            </article>
+            <!-- album 2 -->
+            <article class="album" data-i="2"
+              data-title="THE WORLD IS YOURS" data-cn="世界是你的" data-cat="Exhibition" data-year="2026"
+              data-demo="https://wis-coral.vercel.app/" data-demolabel="Exhibition"
+              data-case="https://wis-coral.vercel.app/case/">
+              <img src="assets/covers/negotiated.png" alt="THE WORLD IS YOURS">
+            </article>
+            <!-- album 3 -->
+            <article class="album" data-i="3"
+              data-title="The Whisper Network" data-cn="菌根 · Mycelium" data-cat="Interactive Installation" data-year="2026"
+              data-demo="https://mycelium-abxv.vercel.app/" data-demolabel="Enter"
+              data-case="https://mycelium-abxv.vercel.app/case">
+              <img src="assets/covers/mycelium.png" alt="The Whisper Network">
+            </article>
+          </div>
+          <div class="nowplaying" id="nowplaying">
+            <p class="np-cat" id="np-cat">Playable Game · 2026</p>
+            <p class="np-title" id="np-title">GOD SHIFT</p>
+            <p class="np-cn" id="np-cn">神谕之镜</p>
+            <div class="np-links" id="np-links"></div>
+          </div>
+        </div>
+
+        <div class="wheel" id="wheel" role="group" aria-label="iPod click wheel">
+          <span class="w-label w-menu" data-go="about">MENU</span>
+          <span class="w-label w-left" data-wheel="prev">‹‹</span>
+          <span class="w-label w-right" data-wheel="next">››</span>
+          <span class="w-label w-down" data-go="dock">▮▮</span>
+          <button class="w-center" id="wcenter" aria-label="Open project"><span class="en">OPEN</span><span class="zh">打开</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ DOCK / CONTACT ════════════════════════════════ -->
+    <section class="dock-sec" id="dock">
+      <h2 class="dock-title scramble" data-en="Let's talk." data-zh="来聊聊。"></h2>
+      <p class="dock-sub"><span class="en">Preparing work toward CHI · applying to HCI PhD programs.</span><span class="zh">正为 CHI 投稿准备 · 申请 HCI 博士项目。</span></p>
+
+      <div class="dock">
+        <a class="dock-app" href="mailto:nikkiyao@bu.edu" title="Email"><span class="di di-mail">✉</span><span class="dock-tip">nikkiyao@bu.edu</span></a>
+        <a class="dock-app" href="https://github.com/acrux-yueyao" target="_blank" rel="noopener" title="GitHub"><span class="di di-gh">⌘</span><span class="dock-tip">github.com/acrux-yueyao</span></a>
+        <span class="dock-div"></span>
+        <button class="dock-app" data-album="0" title="GOD SHIFT"><img src="assets/covers/god-shift.jpg" alt=""><span class="dock-tip">GOD SHIFT</span></button>
+        <button class="dock-app" data-album="1" title="GOV.AI"><img src="assets/covers/govai.jpg" alt=""><span class="dock-tip">GOV.AI</span></button>
+        <button class="dock-app" data-album="2" title="THE WORLD IS YOURS"><img src="assets/covers/negotiated.png" alt=""><span class="dock-tip">世界是你的</span></button>
+        <button class="dock-app" data-album="3" title="The Whisper Network"><img src="assets/covers/mycelium.png" alt=""><span class="dock-tip">Whisper Net</span></button>
+      </div>
+
+      <p class="colophon">© 2026 Yue Yao · <span class="en">Boston, MA</span><span class="zh">马萨诸塞州，波士顿</span> · <span class="en">Built as a little operating system.</span><span class="zh">做成一个小小的操作系统。</span></p>
+    </section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

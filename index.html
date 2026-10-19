@@ -18,6 +18,7 @@
       <button class="mb-item mb-name" data-go="boot">Yue Yao OS</button>
       <button class="mb-item" data-go="about"><span class="en">About</span><span class="zh">关于</span></button>
       <button class="mb-item" data-go="ipod"><span class="en">Work</span><span class="zh">作品</span></button>
+      <button class="mb-item mb-live" data-go="hyphal"><span class="en">Market</span><span class="zh">集市</span></button>
       <button class="mb-item" data-go="dock"><span class="en">Contact</span><span class="zh">联系</span></button>
     </div>
     <div class="mb-right">
@@ -26,6 +27,15 @@
       <span class="mb-clock" id="clock">--:--</span>
     </div>
   </div>
+
+  <!-- ── Notification ────────────────────────────────────── -->
+  <button class="notif" data-go="hyphal" aria-label="BU Art Market, Oct 30">
+    <span class="notif-icon">🍄</span>
+    <span class="notif-text">
+      <b>BU Art Market · <span class="en">Fri Oct 30</span><span class="zh">10/30 周五</span></b>
+      <span class="notif-sub"><span class="en">The tower shows in person — 808 Commonwealth Ave, 12–5 PM</span><span class="zh">塔去现场 — 808 Commonwealth Ave，12–5 点</span></span>
+    </span>
+  </button>
 
   <main>
 
@@ -141,6 +151,55 @@
           <span class="w-label w-right" data-wheel="next">››</span>
           <span class="w-label w-down" data-go="dock">▮▮</span>
           <button class="w-center" id="wcenter" aria-label="Open project"><span class="en">OPEN</span><span class="zh">打开</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ HYPHAL COLUMN (physical build + market) ═══════ -->
+    <section class="gal-sec" id="hyphal">
+      <div class="window gal-window">
+        <div class="win-bar">
+          <span class="lights"><i></i><i></i><i></i></span>
+          <span class="win-title">hyphal_column — photos</span>
+          <span class="win-spacer"></span>
+        </div>
+        <div class="win-body">
+          <p class="gal-kicker">◇ <span class="en">New · The Whisper Network, off-screen</span><span class="zh">新 · 菌丝网络走下屏幕</span></p>
+          <h2 class="gal-title scramble" data-en="Hyphal Column, built." data-zh="菌柱，做出来了。"></h2>
+          <p class="gal-lead">
+            <span class="en">The Whisper Network now has a body: a five-foot steel column with six screens and a tree hole inside. Whisper one sentence and a pixel spore grows. Your sentence never shows on any screen — only the spore it grew.</span>
+            <span class="zh">菌丝网络现在有了身体：一根五英尺的钢柱，挂着六块屏，树洞装在里面。对它说一句话，就长出一只像素孢子。你说的话不会出现在任何屏幕上——公开的只有长出来的那只孢子。</span>
+          </p>
+
+          <div class="event-card">
+            <p class="ev-name">BU ART MARKET</p>
+            <p class="ev-meta"><span class="en">Fri · Oct 30 · 12–5 PM</span><span class="zh">10 月 30 日（周五）· 12–5 点</span> · 808 Commonwealth Ave · <span class="en">free</span><span class="zh">免费</span></p>
+            <ul class="ev-list">
+              <li><span class="en">Sit down and whisper a sentence to the tower</span><span class="zh">坐下来，对塔说一句话</span></li>
+              <li><span class="en">Like your spore? We'll make it into a charm on the spot</span><span class="zh">喜欢长出来的孢子？现场做成吊坠带走</span></li>
+              <li><span class="en">Tell us how it felt — a 2-minute anonymous form</span><span class="zh">说说感受——两分钟匿名问卷</span></li>
+            </ul>
+            <p class="ev-links"><a href="assets/docs/hyphal-flyer.pdf" target="_blank" rel="noopener"><span class="en">Flyer</span><span class="zh">传单</span> ↗</a> · <a href="assets/docs/hyphal-booth.pdf" target="_blank" rel="noopener"><span class="en">Booth plan</span><span class="zh">摊位安排</span> ↗</a></p>
+          </div>
+
+          <figure class="gal-hero"><img src="assets/projects/mycelium/p1-tower.jpg" alt="The steel tower with six screens, running" loading="lazy">
+            <figcaption><span class="en">Running at home before the market — six screens, a Raspberry Pi, an ultrasonic sensor on top.</span><span class="zh">开市前先在家里跑着——六块屏、一个树莓派、顶上一只超声波传感器。</span></figcaption></figure>
+          <div class="gal-2">
+            <figure><img src="assets/projects/mycelium/p3-charms.jpg" alt="3D-printed pixel charms" loading="lazy">
+              <figcaption><span class="en">Spores printed into charms, tile by tile.</span><span class="zh">孢子打印成吊坠，一格一格拼出来。</span></figcaption></figure>
+            <figure><img src="assets/projects/mycelium/p5-tray.jpg" alt="Numbered assembly tray with tiles" loading="lazy">
+              <figcaption><span class="en">The assembly tray — numbered pockets and magnets.</span><span class="zh">拼装托盘——编号格子加磁铁。</span></figcaption></figure>
+          </div>
+          <div class="gal-2">
+            <figure><img src="assets/projects/mycelium/p6-chart.png" alt="A charm build chart" loading="lazy">
+              <figcaption><span class="en">Every charm comes with its own build chart.</span><span class="zh">每只吊坠配一张自己的拼装图。</span></figcaption></figure>
+            <figure><img src="assets/projects/mycelium/p4-figure.jpg" alt="The companion robot's shell, built from magnetic voxels" loading="lazy">
+              <figcaption><span class="en">The companion robot's shell — a spore body built from magnetic voxels.</span><span class="zh">陪伴机器人的外壳——用磁性方块拼出来的孢子身体。</span></figcaption></figure>
+          </div>
+          <figure class="gal-hero"><img src="assets/projects/mycelium/p7-board.jpg" alt="Custom PCB for the desk companion robot" loading="lazy">
+            <figcaption><span class="en">In progress: a desk companion robot on the same network as the tower — board v1 just arrived (ESP32, mic, time-of-flight eyes, touch pads).</span><span class="zh">在做：桌面陪伴小机器人，和塔同一张网——主板 v1 刚到（ESP32、麦克风、ToF 测距、触摸点）。</span></figcaption></figure>
+
+          <p class="gal-cta"><a href="https://mycelium.yueyao.design/" target="_blank" rel="noopener"><span class="en">Grow one now</span><span class="zh">现在就种一只</span> → mycelium.yueyao.design</a></p>
         </div>
       </div>
     </section>

@@ -103,6 +103,7 @@
                                     : (d.caselabel || "Case");
       npLinks.appendChild(mkLink(d.case, caseLabel, true));
     }
+    if (d.pdf) npLinks.appendChild(mkLink(d.pdf, lang === "zh" ? "画册" : "PDF", true));
   }
   function mkLink(href, label, alt) {
     var a = document.createElement("a");

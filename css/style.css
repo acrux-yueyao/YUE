@@ -248,6 +248,7 @@ main{ padding-top:30px; }
 .gal-cta{ margin:26px 0 0; }
 .gal-cta a{ font-family:var(--mono); font-size:13.5px; font-weight:700; color:var(--ink); border-bottom:2px solid var(--accent); padding-bottom:2px; }
 .gal-cta a:hover{ color:var(--accent); }
+.gal-cta a + a{ margin-left:22px; }
 
 /* ── DOCK / CONTACT ──────────────────────────────────────── */
 .dock-sec{ min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:80px var(--gutter) 60px; text-align:center; position:relative;
